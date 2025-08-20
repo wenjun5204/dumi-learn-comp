@@ -16,7 +16,7 @@ features:
     description: Put world description here
   - title: '!'
     emoji: 🚀
-    description: Put ! description here
+    description: 你自己的特性
 ---
 
 regan-ad-comp 
