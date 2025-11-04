@@ -1,0 +1,26 @@
+{
+  "name": "@regan-ad/docs",
+  "version": "1.0.0",
+  "description": "组件库文档站点",
+  "private": true,
+  "scripts": {
+    "dev": "dumi dev",
+    "build": "dumi build",
+    "preview": "dumi preview",
+    "lint": "eslint . --ext .ts,.tsx"
+  },
+  "dependencies": {
+    "@regan-ad/base-ui": "workspace:*",
+    "@regan-ad/base-form": "workspace:*",
+    "@regan-ad/business-admin": "workspace:*",
+    "@regan-ad/business-dashboard": "workspace:*",
+    "@regan-ad/shared": "workspace:*",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "dumi": "^2.4.13"
+  }
+}

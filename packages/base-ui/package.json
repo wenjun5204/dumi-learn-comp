@@ -1,0 +1,32 @@
+{
+  "name": "@regan-ad/base-ui",
+  "version": "1.0.0",
+  "description": "基础 UI 组件库",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "dev": "dumi dev",
+    "build": "rollup -c",
+    "build:watch": "rollup -c -w",
+    "docs:build": "dumi build",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "dependencies": {
+    "@regan-ad/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "@rollup/plugin-typescript": "^12.1.4",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "dumi": "^2.4.13",
+    "rollup": "^3.29.5"
+  }
+}
