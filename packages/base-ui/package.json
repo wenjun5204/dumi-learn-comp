@@ -5,12 +5,12 @@
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "dumi dev",
     "build": "rollup -c",
     "build:watch": "rollup -c -w",
-    "docs:build": "dumi build",
     "lint": "eslint src --ext .ts,.tsx"
   },
   "peerDependencies": {
