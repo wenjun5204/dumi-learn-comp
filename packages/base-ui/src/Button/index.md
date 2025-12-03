@@ -16,15 +16,6 @@ export default () => <Button>Click me</Button>;
 
 <API id="Button"></API>
 
-| 属性 | 类型 | 说明 | 默认值 |
-|------|------|------|--------|
-| children | ReactNode | 按钮文本 | - |
-| onClick | () => void | 点击回调 | - |
-| type | 'primary' \| 'default' \| 'dashed' | 按钮类型 | 'default' |
-| disabled | boolean | 是否禁用 | false |
-| loading | boolean | 是否加载中 | false |
-| size | 'large' \| 'middle' \| 'small' | 按钮大小 | 'middle' |
-
 ## 示例
 
 ### 主要按钮

@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "pnpm -r --parallel dev",
+    "buildsub":"pnpm --filter @regan-ad/base-ui build",
     "build": "pnpm -r --parallel build",
     "docs:dev": "pnpm --filter @regan-ad/docs dev",
     "docs:build": "pnpm --filter @regan-ad/docs build",

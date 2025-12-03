@@ -125,6 +125,9 @@ importers:
       rollup:
         specifier: ^3.29.5
         version: 3.29.5
+      rollup-plugin-peer-deps-external:
+        specifier: ^2.2.4
+        version: 2.2.4(rollup@3.29.5)
 
   packages/business-admin:
     dependencies:
@@ -5438,6 +5441,11 @@ packages:
   ripemd160@2.0.3:
     resolution: {integrity: sha1-m+VOS6XjVZyO7gaiXNdki7zN9ag=, tarball: http://r.npm.sankuai.com/ripemd160/download/ripemd160-2.0.3.tgz}
     engines: {node: '>= 0.8'}
+
+  rollup-plugin-peer-deps-external@2.2.4:
+    resolution: {integrity: sha1-ikILv9bczDCutoyb9XAR8vEJVw0=, tarball: http://r.npm.sankuai.com/rollup-plugin-peer-deps-external/download/rollup-plugin-peer-deps-external-2.2.4.tgz}
+    peerDependencies:
+      rollup: '*'
 
   rollup-plugin-visualizer@5.9.0:
     resolution: {integrity: sha1-ATrFT7ap18kBnn63fs7WczmeWgs=, tarball: http://r.npm.sankuai.com/rollup-plugin-visualizer/download/rollup-plugin-visualizer-5.9.0.tgz}
@@ -12661,6 +12669,10 @@ snapshots:
     dependencies:
       hash-base: 3.1.2
       inherits: 2.0.4
+
+  rollup-plugin-peer-deps-external@2.2.4(rollup@3.29.5):
+    dependencies:
+      rollup: 3.29.5
 
   rollup-plugin-visualizer@5.9.0(rollup@3.29.5):
     dependencies:
