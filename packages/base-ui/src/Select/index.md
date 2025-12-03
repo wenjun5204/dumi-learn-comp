@@ -1,9 +1,4 @@
----
-title: Select 组件
-group:
-  title: Base UI
-  order: 1
----
+
 
 # Select 组件
 

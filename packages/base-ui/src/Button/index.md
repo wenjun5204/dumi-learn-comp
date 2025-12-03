@@ -1,9 +1,4 @@
----
-title: Button 组件
-group:
-  title: Base UI
-  order: 1
----
+
 
 # Button 组件
 

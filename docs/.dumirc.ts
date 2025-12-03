@@ -13,13 +13,6 @@ import { defineConfig } from 'dumi';
 import * as path from 'path';
 
 export default defineConfig({
-  // ============================================
-  // 插件配置
-  // ============================================
-
-  // ============================================
-  // 基础配置
-  // ============================================
 
   // 输出目录
   outputPath: '../docs-dist',
@@ -28,12 +21,12 @@ export default defineConfig({
   // Monorepo 重定向配置（关键）
   // ============================================
   // 自动重定向到子包的源码位置，支持热更新，无需预构建
-  monorepoRedirect: {
-    // 源码文件夹优先级 - Dumi 会自动扫描这些目录中的 .md 文件
-    srcDir: ['src'],
-    // 启用 peerDeps 重定向，避免多实例问题
-    peerDeps: true,
-  },
+  // monorepoRedirect: {
+  //   // 源码文件夹优先级 - Dumi 会自动扫描这些目录中的 .md 文件
+  //   srcDir: ['packages'],
+  //   // 启用 peerDeps 重定向，避免多实例问题
+  //   peerDeps: true,
+  // },
 
   // ============================================
   // 别名配置 - 指向各个包的源代码
@@ -84,7 +77,7 @@ export default defineConfig({
     ],
 
     // 配置入口文件路径，API 解析将从这里开始
-    entryFile: '../src/index.ts',
+    entryFile: '../packages/base-ui/src/index.ts',
   },
 
   // ============================================

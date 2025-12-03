@@ -1,9 +1,3 @@
----
-title: Input 组件
-group:
-  title: Base UI
-  order: 1
----
 
 # Input 组件
 
