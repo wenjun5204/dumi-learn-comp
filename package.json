@@ -4,18 +4,19 @@
   "description": "Regan AD 组件库 Monorepo",
   "private": true,
   "scripts": {
-    "dev": "pnpm -r --parallel dev",
-    "buildsub":"pnpm --filter @regan-ad/base-ui build",
-    "build": "pnpm -r --parallel build",
+    "dev": "turbo run dev --parallel",
+    "buildsub": "turbo run build --filter @regan-ad/base-ui",
+    "build": "turbo run build",
     "docs:dev": "pnpm --filter @regan-ad/docs dev",
-    "docs:build": "pnpm --filter @regan-ad/docs build",
-    "lint": "pnpm -r lint",
+    "docs:build": "turbo run build --filter @regan-ad/docs",
+    "lint": "turbo run lint",
     "clean": "pnpm -r clean && rm -rf node_modules"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "turbo": "^2.9.16",
     "typescript": "^5.0.0"
   },
   "engines": {

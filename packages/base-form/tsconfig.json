@@ -6,8 +6,8 @@
     "baseUrl": "./",
     "paths": {
       "@regan-ad/shared": ["../shared/src"],
-      "@regan-ad/base-ui": ["./src"],
-      "@regan-ad/base-form": ["../base-form/src"],
+      "@regan-ad/base-ui": ["../base-ui/src"],
+      "@regan-ad/base-form": ["./src"],
       "@regan-ad/business-admin": ["../business-admin/src"],
       "@regan-ad/business-dashboard": ["../business-dashboard/src"]
     }

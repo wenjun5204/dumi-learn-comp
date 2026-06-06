@@ -1,0 +1,1 @@
+export const businessDashboardVersion = '1.0.0';

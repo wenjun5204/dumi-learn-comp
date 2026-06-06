@@ -18,8 +18,10 @@ export default defineConfig({
   outputPath: '../docs-dist',
 
   // ============================================
-  // Monorepo 重定向配置（关键）
+  // 主题配置
   // ============================================
+  // 指定自定义主题路径
+  theme: path.resolve(__dirname, '../.dumi/theme'),
   // 自动重定向到子包的源码位置，支持热更新，无需预构建
   // monorepoRedirect: {
   //   // 源码文件夹优先级 - Dumi 会自动扫描这些目录中的 .md 文件
@@ -88,14 +90,15 @@ export default defineConfig({
     name: 'Regan AD 组件库',
 
     // 站点 Logo
-    logo: 'https://example.com/logo.png',
+    logo: 'https://www.bilibili.com/favicon.ico',
+
+    sidebar: {
+      // 自动生成侧边栏
+      mode: 'auto',
+    },
 
     // 导航菜单
     nav: [
-      {
-        title: '首页',
-        link: '/',
-      },
       {
         title: '指南',
         link: '/guide',

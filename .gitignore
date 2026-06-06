@@ -1,11 +1,14 @@
 # Dependencies
 node_modules/
+.turbo/
+**/.turbo/
 .pnpm-debug.log*
 
 # Build
 dist/
 docs-dist/
-.dumi/
+**/.dumi/
+!**/.dumi/theme/**
 
 # IDE
 .vscode/
