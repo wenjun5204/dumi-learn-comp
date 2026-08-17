@@ -1,16 +1,9 @@
 {
-  "extends": "../../tsconfig.package.json",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist",
     "rootDir": "./src",
-    "baseUrl": "./",
-    "paths": {
-      "@regan-ad/shared": ["./src"],
-      "@regan-ad/base-ui": ["../base-ui/src"],
-      "@regan-ad/base-form": ["../base-form/src"],
-      "@regan-ad/business-admin": ["../business-admin/src"],
-      "@regan-ad/business-dashboard": ["../business-dashboard/src"]
-    }
+    "baseUrl": "./"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "dist", "**/*.md"]

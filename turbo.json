@@ -3,23 +3,26 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**"]
+      "outputs": ["dist/**", "docs-dist/**", "../docs-dist/**"]
     },
-    "@regan-ad/docs#build": {
+    "build:watch": {
       "dependsOn": ["^build"],
-      "outputs": ["$TURBO_ROOT$/docs-dist/**"]
+      "cache": false,
+      "persistent": true
     },
     "docs:build": {
       "dependsOn": ["^build"],
-      "outputs": ["dist/**", "$TURBO_ROOT$/docs-dist/**"]
-    },
-    "lint": {
-      "dependsOn": ["^build"],
-      "outputs": []
+      "outputs": ["../docs-dist/**"]
     },
     "dev": {
       "cache": false,
       "persistent": true
+    },
+    "lint": {
+      "outputs": []
+    },
+    "clean": {
+      "cache": false
     }
   }
 }

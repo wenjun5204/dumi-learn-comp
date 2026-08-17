@@ -45,7 +45,6 @@ export default defineConfig({
   apiParser: {},
 
   themeConfig: {
-    name: 'Regan AD 组件库',
     nav: [
       { title: '首页', link: '/' },
       { title: '指南', link: '/guide' },

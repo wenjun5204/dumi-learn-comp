@@ -20,8 +20,6 @@ export default defineConfig({
   // ============================================
   // 主题配置
   // ============================================
-  // 指定自定义主题路径
-  theme: path.resolve(__dirname, '../.dumi/theme'),
   // 自动重定向到子包的源码位置，支持热更新，无需预构建
   // monorepoRedirect: {
   //   // 源码文件夹优先级 - Dumi 会自动扫描这些目录中的 .md 文件
@@ -87,7 +85,7 @@ export default defineConfig({
   // ============================================
   themeConfig: {
     // 站点名称
-    name: 'Regan AD 组件库',
+    name: 'monorepo',
 
     // 站点 Logo
     logo: 'https://www.bilibili.com/favicon.ico',
