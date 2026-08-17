@@ -7,6 +7,9 @@ dist/
 docs-dist/
 .dumi/
 
+# Turborepo
+.turbo/
+
 # IDE
 .vscode/
 .idea/

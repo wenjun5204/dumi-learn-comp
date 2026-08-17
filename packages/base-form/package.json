@@ -2,14 +2,20 @@
   "name": "@regan-ad/base-form",
   "version": "1.0.0",
   "description": "基础表单组件库",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
+  "sideEffects": [
+    "*.css",
+    "*.less",
+    "*.scss"
+  ],
   "files": ["dist"],
   "scripts": {
     "dev": "dumi dev",
     "build": "rollup -c",
     "build:watch": "rollup -c -w",
+    "clean": "rm -rf dist",
     "docs:build": "dumi build",
     "lint": "eslint src --ext .ts,.tsx"
   },
@@ -28,6 +34,10 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "dumi": "^2.4.13",
-    "rollup": "^3.29.5"
+    "rollup": "^3.29.5",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "@rollup/plugin-terser": "^0.4.4",
+    "typescript": "^5.0.0"
   }
 }

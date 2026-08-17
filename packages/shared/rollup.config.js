@@ -2,6 +2,6 @@ const { createRollupConfig } = require('../../scripts/rollup.config.factory');
 
 module.exports = createRollupConfig({
   input: 'src/index.ts',
-  packageName: '@regan-ad/base-ui',
-  external: ['react', 'react-dom', '@regan-ad/shared'],
+  packageName: '@regan-ad/shared',
+  external: [],
 });

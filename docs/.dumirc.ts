@@ -85,7 +85,7 @@ export default defineConfig({
   // ============================================
   themeConfig: {
     // 站点名称
-    name: 'Regan AD 组件库',
+    name: 'monorepo',
 
     // 站点 Logo
     logo: 'https://example.com/logo.png',

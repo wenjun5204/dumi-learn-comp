@@ -4,18 +4,25 @@
   "description": "Regan AD 组件库 Monorepo",
   "private": true,
   "scripts": {
-    "dev": "pnpm -r --parallel dev",
-    "buildsub":"pnpm --filter @regan-ad/base-ui build",
-    "build": "pnpm -r --parallel build",
-    "docs:dev": "pnpm --filter @regan-ad/docs dev",
-    "docs:build": "pnpm --filter @regan-ad/docs build",
-    "lint": "pnpm -r lint",
-    "clean": "pnpm -r clean && rm -rf node_modules"
+    "dev": "turbo dev",
+    "build:shared": "turbo build --filter=@regan-ad/shared",
+    "build:ui": "turbo build --filter=@regan-ad/base-ui",
+    "build:form": "turbo build --filter=@regan-ad/base-form",
+    "build:admin": "turbo build --filter=@regan-ad/business-admin",
+    "build:dashboard": "turbo build --filter=@regan-ad/business-dashboard",
+    "build:libs": "turbo build --filter=\"./packages/**\"",
+    "build": "turbo build",
+    "docs:dev": "turbo dev --filter=@regan-ad/docs",
+    "docs:build": "turbo build --filter=@regan-ad/docs",
+    "lint": "turbo lint",
+    "clean": "turbo clean && rm -rf .turbo",
+    "clean:all": "turbo clean && rm -rf .turbo node_modules"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "turbo": "^2.3.3",
     "typescript": "^5.0.0"
   },
   "engines": {

@@ -26,7 +26,6 @@ export const Select: React.FC<SelectProps> & { Option: typeof SelectOption } = (
 }) => {
   return (
     <select
-      placeholder={placeholder}
       value={value}
       onChange={(e) => onChange?.(e.target.value)}
       disabled={disabled}
